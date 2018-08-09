@@ -22,4 +22,12 @@ OR
 If successful, you should see on the console:
 Hello gRPC Image server
 
+#Distribution
+./gradlew distZip
+
+Generates a zip file inside build/distributions/
+
+This zip or tar file contains a bin directory.
+Run from within the distribution with a ./bin/grpc-java-course1 to start the server easily
+
 
