@@ -40,6 +40,8 @@ service ImageService {
     rpc CopyImageReqStream(stream CopyImageRequest) returns (CopyImageResponse) {};
     rpc ReadImageReqStream(stream ReadImageRequest) returns (ReadImageResponse) {};
     //Unary async call
+    //Returns UNAVAILABLE if server is down.
+    //Message payload must not be empty
     rpc CopyImage(CopyImageRequest) returns (CopyImageResponse) {};
     rpc ReadImage(ReadImageRequest) returns (ReadImageResponse) {};
 
